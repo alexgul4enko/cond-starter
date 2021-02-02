@@ -135,7 +135,6 @@ function init(
       return fs.copy(template, dest)
 
 
-      // shell.exec(`cd ./${configs.folderName} && git fetch origin && git checkout next-generation`)
 
       // console.log(chalk.cyan('Cloning git repository finished'))
       // return updatePkg(path.join(dest, 'package.json'), configs)
