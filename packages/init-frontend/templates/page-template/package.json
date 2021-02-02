@@ -4,8 +4,8 @@
   "description": "",
   "contributors": [],
   "scripts": {
-    "start": "test-react-scripts-cond start",
-    "build": "test-react-scripts-cond build",
+    "start": "@cond-starterkit/react-scripts start",
+    "build": "@cond-starterkit/react-scripts build",
     "lint": "yarn run eslint && yarn run stylelint",
     "lint:fix": "yarn run eslint:fix && yarn run stylelint:fix",
     "eslint": "eslint src/**/*.js",

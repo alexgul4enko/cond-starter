@@ -8,6 +8,9 @@
   "scripts": {
     "release": "lerna publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
@@ -51,5 +54,6 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3",
     "write-file-webpack-plugin": "^4.5.1"
-  }
+  },
+  "gitHead": "e80f651e0d8325323cc959f50668fd997c5ffbb9"
 }

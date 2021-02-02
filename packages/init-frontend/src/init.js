@@ -153,7 +153,7 @@ function init(
 
       try {
         const dependencies = 'react react-dom'
-        const devDependencies = 'eslint-config-cond husky lint-staged madge stylelint-config-cond test-react-scripts-cond'
+        const devDependencies = '@cond-starterkit/eslint-config husky lint-staged madge @cond-starterkit/stylelint-config @cond-starterkit/react-scripts'
         shell.exec(`cd ./${configs.folderName} && yarn add ${dependencies} && yarn add ${devDependencies} -D`)
       } catch (err) {
         console.log(chalk.red('Installation failed'))
