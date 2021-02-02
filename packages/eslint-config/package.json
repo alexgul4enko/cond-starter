@@ -1,6 +1,6 @@
 {
   "name": "@cond-starterkit/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "tape": "^5.0.1"
   },
