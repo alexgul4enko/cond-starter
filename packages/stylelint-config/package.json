@@ -1,0 +1,52 @@
+{
+  "name": "@cond-starterkit/stylelint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    ".stylelintrc.json"
+  ],
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-stylelint": "^12.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.2.13",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "format": "prettier . --write",
+    "lint:formatting": "prettier . --check",
+    "lint:js": "eslint . --ignore-path .gitignore",
+    "lint": "npm-run-all --parallel lint:*",
+    "test": "jest",
+    "watch": "jest --watch",
+    "release": "lerna publish"
+  },
+  "eslintConfig": {
+    "extends": [
+      "stylelint"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-lint-recommended",
+      "remark-preset-prettier"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,md,yml}": "prettier --write"
+  },
+  "dependencies": {
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  }
+}
