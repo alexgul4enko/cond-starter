@@ -134,9 +134,6 @@ function init(
 
       return fs.copy(template, dest)
 
-      // if(shell.exec(`git clone --recursive https://github.com/django-stars/frontend-skeleton ${dest}`, { silent: true }).code !== 0) {
-      //   throw new Error(chalk.red(`Cloning git repo failed!`))
-      // }
 
       // shell.exec(`cd ./${configs.folderName} && git fetch origin && git checkout next-generation`)
 
