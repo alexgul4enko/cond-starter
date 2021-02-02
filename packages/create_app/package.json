@@ -1,6 +1,6 @@
 {
   "name": "@cond-starterkit/react-scripts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "bin": {
     "test-react-scripts-cond": "bin/start.js"
