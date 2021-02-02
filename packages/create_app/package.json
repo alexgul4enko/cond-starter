@@ -3,7 +3,7 @@
   "version": "0.0.4",
   "description": "",
   "bin": {
-    "test-react-scripts-cond": "bin/start.js"
+    "@cond-starterkit/react-scripts": "bin/start.js"
   },
   "scripts": {
     "release": "lerna publish"
